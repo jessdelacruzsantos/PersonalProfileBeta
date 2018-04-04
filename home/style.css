@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+}
+nav {
+    background: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+nav ul {
+    margin: 0 auto;
+    padding-left: 0;
+    
+}
+nav ul li {
+    font-size: 24px;
+    font-family: Times;
+    display: inline;
+    padding: 12px;
+    padding-right: 50px;
+    float: left;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: maroon;
+}
+nav ul li a:hover{
+    color: wheat;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#logo {
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    border-radius: 70%;
+}
+#bio {
+    text-align: center;
+    grid-area: bio;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    max-width: 700px;
+    box-shadow: 0 0 2px 1px white;
+}
+#img {
+    margin-top: 10px;
+    border-radius: 8px;
+    grid-area: img;
+    box-shadow: 0 0 2px 1px lightgray;
+}
+#logo:hover {
+    box-shadow: 0 0 2px 1px lightgray;
+    background: wheat;
+    height: 32px;
+}
+.bg-color {
+    background: black;
+}
+.active {
+    background: black;
+    color: forestgreen;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.main {
+    display: grid;
+    grid-template-rows:300px 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas: "img img img" "bio bio bio";
+    grid-gap: 10px;
+    position: relative;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}

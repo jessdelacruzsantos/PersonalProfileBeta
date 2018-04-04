@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+}
+nav {
+    background: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+nav ul {
+    margin: 0 auto;
+    padding-left: 0;
+    
+}
+nav ul li {
+    font-size: 24px;
+    font-family: Times;
+    display: inline;
+    padding: 12px;
+    padding-right: 50px;
+    float: left;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: maroon;
+}
+nav ul li a:hover{
+    color: wheat;
+
+}
+#logo {
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    border-radius: 70%;
+}
+#frame {
+    margin-top: 10px;
+    border-radius: 8px;
+    grid-area: frame;
+    /* box-shadow: 0 0 2px 1px lightgray; */
+    width: 80%;
+}
+#frame iframe {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border:none;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 0px;
+    justify-self: center;
+}
+#logo:hover {
+    box-shadow: 0 0 2px 1px lightgray;
+    background: wheat;
+    height: 32px;
+}
+#descr {
+    grid-area: description;
+}
+#link-bttns {
+    grid-area: link;
+    color: white;
+}
+.active {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.bg-color {
+    background: black;
+}
+.link-bttn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 0px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.up-coming {
+    cursor: not-allowed;
+    background: gray;
+}
+.main {
+    display: grid;
+    grid-template-rows:5fr 1fr 2fr;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas: "frame frame frame" "description description description" "link link link";
+    grid-gap: 10px;
+    position: relative;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+/* Tried to create a tool-tip, revisit later for now using title */
+/* insert span next to item text<span class="up-coming-message">In the works!</span> */
+/* .up-coming-message {
+    visibility: hidden;
+    width: 100px;
+    color: maroon;
+    background: #333;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.up-coming:hover .up-coming-message {
+    visibility: visible;
+} */
+/* .link-bttns .up-coming:hover {
+    cursor: not-allowed;
+} */
